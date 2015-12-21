@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>full page test</title>
+	
+	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/skeleton/css/skeleton.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+	<script src="bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
+	<script src="bower_components/masonry/dist/masonry.pkgd.js"></script>
+	
+
+	<script>
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				scrollOverflow: true
+			});
+		});
+
+
+		$(document).ready( function() {
+			$('.grid').masonry({
+			    itemSelector: '.grid-item',
+			    columnWidth: 320
+			  });
+		  
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+	<nav>
+		<div class="nav-container">
+			<figure class="main-logo">
+				<a href="#"><img src="images/Sproutmedia logo2.png"></a>
+			</figure>
+
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">portfolio</a></li>
+				<li><a href="#">services</a></li>
+				<li><a href="#">contact</a></li>
+				
+			</ul>
+
+		</div>
+
+	</nav>
+
+	<div id="fullpage">
+
+	    <div class="section" id="pink">
+			<h1 class="slogan">Sweet. <span id="sunday">Sunday.</span></h1>		  
+			<h2 class="slogan-2">We created engaging solutions and tell great stories</h2>
+		</div>
+	    
+	    <div class="section" id="services">
+
+			<div class="container blog-landing">
+				<div class="row">
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="t3-design-to-web-blog.html">Technical Blog 3</a></h5>
+						<h6 class="blog-date">Sunday 20th December, 2015</h6>
+					</div>
+
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="c2-emotional-intelligence.html">Cultural Blog</a></h5>
+						<h6 class="blog-date">Sunday 13th December, 2015</h6>
+					</div> 
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="t2-html-css-dom-p2.html">Technical Blog Part 2</a></h5>
+						<h6 class="blog-date">Thursday 10th December, 2015</h6>
+					</div>
+				</div><!--end of row 1-->
+
+				<div class="row">
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="t2-html-css-dom-p1.html">Technical Blog Part 1</a></h5>
+						<h6 class="blog-date">Tuesday 8th December, 2015</h6>
+					</div>
+
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="c1-time-and-habits-blog.html">Time and habit</a></h5>
+						<h6 class="blog-date">Saturday 4th December, 2015</h6>
+					</div>
+
+					<div class="one-third column">
+						<h5 class="blog-heading"><a href="c1-reflection-blog.html">Reflections</a></h5>
+						<h6 class="blog-date">Friday 3rd December, 2015</h6>
+					</div> 
+				</div><!--end of row 2-->	
+			</div>	<!--end of container -->
+
+
+		</div><!--end of services -->
+
+	    <div class="section" id="portfolio">
+
+			<div class="grid">
+				<div class="grid-item"></div>
+				<div class="grid-item grid-item3"></div>
+				<div class="grid-item grid-item2"></div>
+				<div class="grid-item grid-item2"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item grid-item2"></div>
+				<div class="grid-item grid-item3"></div>
+				<div class="grid-item"></div>
+			</div>	
+		</div><!--end of portfolio -->
+
+
+	</div><!--end of pull page -->
+
+
+
+
+
+</body>
+</html>
